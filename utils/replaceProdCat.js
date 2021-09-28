@@ -1,0 +1,17 @@
+module.exports = function replaceProdCat(value){//dá um replace na string, para deixar só o nome do produto
+	let letraminuscula =value.toLowerCase()
+	return letraminuscula.replace('quero comprar ','')
+  .replace('não consigo achar ','')
+  .replace('você teria ','')
+  .replace('você tem ','')
+  .replace('me mostra um ','')
+  .replace('onde encontro ','')
+  .replace('como comprar ','')
+  .replace('quero um ','')
+  .replace('quero comprar um ','')
+  .replace('quero comprar ','')
+  .replace('comprar ','')
+  .replace('qual loja tem ','')
+  .replace('onde tem ','')
+  .replace(/\s/g, '%20')
+}
